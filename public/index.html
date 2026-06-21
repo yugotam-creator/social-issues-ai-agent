@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社会問題AI分析レポートジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🌍 社会問題AI分析レポートジェネレーター</h1>
+            <p>複数のAIエージェントが社会問題を深く分析し、専門的なレポートを生成します</p>
+        </header>
+
+        <main class="main-content">
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message system-message">
+                        <div class="message-content">
+                            <strong>🤖 AI分析システム</strong>
+                            <p>こんにちは！社会問題についてのご質問をどうぞ。</p>
+                            <p><strong>対応テーマ：</strong></p>
+                            <ul>
+                                <li>👶 子どもの権利・教育問題（教育格差など）</li>
+                                <li>📺 メディアのあり方（フェイクニュースなど）</li>
+                                <li>🍷 依存症問題（ギャンブル、ゲーム、薬物など）</li>
+                            </ul>
+                            <p>質問を入力して、詳細なレポートを受け取ってください。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-area">
+                    <form id="chatForm" class="chat-form">
+                        <div class="input-wrapper">
+                            <textarea 
+                                id="messageInput" 
+                                class="message-input" 
+                                placeholder="社会問題について質問してください。例：日本の教育格差について教えてください"
+                                rows="3"
+                            ></textarea>
+                            <button type="submit" class="send-button" id="sendButton">
+                                <span>送信</span>
+                                <span class="spinner" style="display: none;"></span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="info-text">
+                        💡 具体的な社会問題について質問すると、より精度の高いレポートが生成されます
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>📱 PC・スマートフォン対応 | 🌐 Wi-Fi接続が必要です | ⚡ Powered by Google Gemini AI</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

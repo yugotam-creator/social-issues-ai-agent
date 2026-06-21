@@ -1,0 +1,21 @@
+{
+  "name": "social-issues-ai-agent",
+  "version": "1.0.0",
+  "description": "AI-powered multi-agent application for social issues analysis",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo 'Build complete'",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "@google/generative-ai": "^0.1.3",
+    "body-parser": "^1.20.2"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
